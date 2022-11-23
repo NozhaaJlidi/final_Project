@@ -1,0 +1,18 @@
+.back{
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width:100%;
+    
+   
+    
+}
+.back img{
+    width:80%;
+    object-fit: cover;
+
+   margin-left: 140px;
+    
+
+}

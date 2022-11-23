@@ -13,7 +13,7 @@ const voyageSchema= new Schema({
         required :true
     }, 
     description: { type: String, required: false },
-    photos: { type: [String], required: false }, 
+    photos: { type: String, required: false }, 
     telephone: { type: String, required: false },
     nb_etoile: { type: Number, required: true },
     id_hotel:{

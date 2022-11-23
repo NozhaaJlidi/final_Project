@@ -5,8 +5,6 @@ import Login from './components/Login';
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { logout, userCurrent } from './redux/userSlice';
-
-
 import Home from './pages/Home';
 import AddVoyage from './components/voyages/dashboard/AddVoyage';
 import CardVoyage from './components/voyages/CardVoyage';
@@ -14,6 +12,9 @@ import { getAllVoyages } from './redux/voyageSlice';
 import ListVoyages from './components/voyages/ListVoyages';
 import About from './components/About';
 import Discover from './components/voyages/Discover';
+import VoyageDetails from './components/voyages/dashboard/VoyageDetails';
+import Navbar from './pages/Navbar';
+import EditVoyage from './components/voyages/dashboard/EditVoyage';
 
 function App() {
   const isAuth = localStorage.getItem('token');
@@ -35,6 +36,7 @@ function App() {
       navigate("/")}
       }>
     Logout</button>: null}</div>
+    <Navbar/>
       <Routes>
       <Route exact path='/register' element={<Register/>}/>
         <Route  path='/login' element={<Login/>}/>
@@ -43,6 +45,9 @@ function App() {
         <Route path='/addVoyage' element={<AddVoyage/>}/>
         <Route path='/list' element={<ListVoyages/>}/>
         <Route path='/discover' element={<Discover/>}/>
+        <Route path='/details/:name' element={<VoyageDetails/>}/>
+        <Route path='/editvoyage' element={<EditVoyage/>}/>
+        <Route path='/voyage' element={<ListVoyages/>}/>
 
       </Routes>
     </div>

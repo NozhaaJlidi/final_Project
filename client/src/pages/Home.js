@@ -1,10 +1,12 @@
 import React from 'react'
-import Navbar from '../pages/Navbar'
+import ListVoyages from '../components/voyages/ListVoyages'
+import Back from './Back'
 
 const Home = () => {
   return (
-    <div>
-        <Navbar/>
+    <div className='home'>
+      <Back/>
+     
     </div>
   )
 }

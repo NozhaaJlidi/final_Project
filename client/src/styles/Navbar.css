@@ -119,6 +119,11 @@ padding-left: 350px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
    display: flex;
    gap: 400px;
+
+
+
+
+   
  }
 
 select{
@@ -171,11 +176,3 @@ a {
     font-weight: 300;
     line-height: 28px;
 }
-.photo{
-    padding-left:135px;
-   
-}
-.photo img{
-    width:1200px;
-    height: 631px;
-} 

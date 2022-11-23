@@ -1,0 +1,20 @@
+.container-fluid{
+    display: flex;
+    flex-direction: column;
+    gap:20px
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.voyageimage img {
+    width: 380px;
+    height: 300px;
+    object-fit: cover;
+}

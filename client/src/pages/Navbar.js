@@ -1,7 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/Navbar.css";
-import About from "../components/About";
+import { faArrowRight, faEnvelope, faEnvelopeOpen, faEnvelopeOpenText, faMobileAlt, faWind } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 const Navbar = () => {
     return (
         <>
@@ -17,7 +19,8 @@ const Navbar = () => {
     <ul className="ul_section1" >
         <li className="nav-item">
             <a className="nav-link" href="mailto:client@traveltodo.com">
-                <img src="./email.png"  alt="email" title="email " className="img-fluid me-2"/>
+            <FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon>
+                {/* <img src="./email.png"  alt="email" title="email " className="img-fluid me-2"/> */}
                 client@wecantravel.com
             </a>
         </li>
@@ -51,11 +54,11 @@ const Navbar = () => {
                 <div className="navbar_container">
                     <div className="navbar_elements">
                         <ul className="navbar_elementsul">
-                            <li><h5>Accueil</h5></li>
-                            <li>
+                            <Link to='/'><li><h5>Accueil</h5></li></Link>
+                            <Link to='/about'><li>
                             <h5>About</h5>
-                           </li>
-                            <li><h5>Discover</h5></li>
+                           </li></Link>
+                           <Link to='/discover'><li><h5>Discover</h5></li></Link> 
 
                             <li id="listTunisie"> <h5>Séjour en Tunisie </h5>
                                 <div className="dropDown">
@@ -73,16 +76,17 @@ const Navbar = () => {
                                     </div>
                                 </div>
           </li>
-                            <li><h5>Voyages à l'étranger</h5></li>
+          <Link to="/voyage">   <li>
+                                <h5>
+                                Voyages à l'étranger</h5></li></Link>
                             <li><h5>Telephone</h5></li>
                         </ul>
                     </div>
                 </div>
 
             </div>
-           <div className="photo">
-            <img src="./background.png"alt="home page"></img>
-            </div> 
+           
+            
            
             
            
