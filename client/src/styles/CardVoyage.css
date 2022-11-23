@@ -1,0 +1,10 @@
+.containner{
+display: flex;
+justify-content: space-between;
+align-items: center
+}
+.voyage{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+}
